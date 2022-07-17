@@ -32,3 +32,9 @@ body {
     margin-top: 30px;
     border-radius: 40px;
 }
+
+#login_button {
+    background-color: #fa0266;
+    width: 80%;
+    border-radius: 15px;
+}
