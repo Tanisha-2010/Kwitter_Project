@@ -16,10 +16,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="kwitter.css">
-
 </head>
 
 <body>
+
     <div class="container">
         <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
         <center>
@@ -29,19 +29,19 @@
 				<img src="m2.png">
 			</sup>
             </h1>
-            <h3 class="color_white" id="heading"></h3>
-            <div class="form-group input_div_room_page">
-                <label>#Add Room:</label>
-                <input type="text" id="room_name_input" class="form-control" placeholder="Room Name">
-
-            </div>
-            <button class="btn btn-success" onclick="addRoom()">#Add Room</button>
-            <h3 class="color_white">#TRENDINGROOMS</h3>
-            <div id="output"></div>
-
+            <div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
         </center>
     </div>
-    <script src="kwitter_room.js"></script>
+
+    <center>
+        <div class="input_div_message_page">
+            <label>Send:</label>
+            <input id="inpt_msg" placeholder="Comment" class="form-control"><br><br>
+            <button id='btn_send' onclick="send()" class="btn btn-success">Send</button>
+        </div>
+    </center>
+
+    <script src="kwitter_page.js"></script>
 </body>
 
 </html>

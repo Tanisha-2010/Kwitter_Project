@@ -1,3 +1,4 @@
+//ADD YOUR FIREBASE LINKS HERE
 const firebaseConfig = {
     apiKey: "AIzaSyBgiMjmUUVhFPYzf5SFl2vDCwyD1dpyon4",
     authDomain: "kwitterproject-ae1db.firebaseapp.com",
@@ -5,11 +6,10 @@ const firebaseConfig = {
     projectId: "kwitterproject-ae1db",
     storageBucket: "kwitterproject-ae1db.appspot.com",
     messagingSenderId: "22698403051",
-    appId: "1:22698403051:web:2bf6a86d41fc9a3fca8aae"
+    appId: "1:22698403051:web:0095719debcac9bbca8aae"
 };
-
 // Initialize Firebase
-firebaseConfig.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 user = localStorage.getItem('user');
 document.getElementById("heading").innerHTML = "Welcome" + user + "!!!";
@@ -43,4 +43,10 @@ function redirectToRoomName(name) {
     console.log("room name" + name);
     localStorage.setItem("room name", name);
     window.location = "kwitter_page.html";
+}
+
+function logout() {
+    localStorage.removeItem("user");
+    localStorage.removeItem('room_name');
+    window.location = "index.html";
 }
